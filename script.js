@@ -1,20 +1,11 @@
+     document.getElementById('container').style.display = "block";
+      document.getElementById('contain').style.display = "none";
+      document.getElementById('contains').style.display = "none";
+
      document.addEventListener('DOMContentLoaded', function () {
          changeMessage(); // Call the function on page load
          document.getElementById('changeMessageButton').addEventListener('click', changeMessage); // Add event listener to button
       });
-      document.addEventListener('DOMContentLoaded', function () {
-         changePresent(); // Call the function on page load
-         document.getElementById('presentButton').addEventListener('click', changePresent); // Add event listener to button
-      });
-
-      document.addEventListener('DOMContentLoaded', function () {
-         start(); // Call the function on page load
-         document.getElementById('start').addEventListener('click', start); // Add event listener to button
-      });
-
-      document.getElementById('container').style.display = "block";
-      document.getElementById('contain').style.display = "none";
-      document.getElementById('contains').style.display = "none";
 
      function start(){
            const audio = document.getElementById('birthdaySong');
@@ -43,8 +34,4 @@
            document.getElementById('contain').style.display = "none";
            document.getElementById('contains').style.display = "block";
          }
-      }
-
-      function changePresent() {
-         window.location('https://wa.me/+6285827653860?text=Halooo');
       }
