@@ -7,18 +7,31 @@
          document.getElementById('presentButton').addEventListener('click', changePresent); // Add event listener to button
       });
 
-      document.getElementById('contain').style.display = "Block";
+      document.addEventListener('DOMContentLoaded', function () {
+         start(); // Call the function on page load
+         document.getElementById('start').addEventListener('click', start); // Add event listener to button
+      });
+
+      document.getElementById('container').style.display = "Block";
+      document.getElementById('contain').style.display = "none";
       document.getElementById('contains').style.display = "none";
 
       const messages = [
-         "Halo Mamaa",
+         "Ingat Sesuatu?",
          "2025-1975 berapa ya?",
          "Waduh udah 50 tuh",
          "Selamat Ulang Tahun Mama",
          "Semoga mama sehat selalu "
       ];
-
       let currentIndex = 0; // Initialize current index
+
+      function start(){
+           const audio = document.getElementById('birthdaySong');
+           document.getElementById('container').style.display = "none";
+           document.getElementById('contain').style.display = "block";
+           document.getElementById('contains').style.display = "none";
+           audio.play();
+      }
 
       // Function to change the message in the message box
       function changeMessage() {
@@ -26,8 +39,9 @@
          messageBox.textContent = messages[currentIndex]; // Display the current message
          currentIndex++; // Move to the next message
          if (currentIndex >= messages.length) { // Reset if at the end
-            document.getElementById('contain').style.display = "none";
-            document.getElementById('contains').style.display = "block";
+           document.getElementById('container').style.display = "none";
+           document.getElementById('contain').style.display = "none";
+           document.getElementById('contains').style.display = "block";
          }
       }
 
