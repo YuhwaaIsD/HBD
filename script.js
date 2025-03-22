@@ -12,9 +12,17 @@
          document.getElementById('start').addEventListener('click', start); // Add event listener to button
       });
 
-      document.getElementById('container').style.display = "Block";
+      document.getElementById('container').style.display = "block";
       document.getElementById('contain').style.display = "none";
       document.getElementById('contains').style.display = "none";
+
+     function start(){
+           const audio = document.getElementById('birthdaySong');
+           document.getElementById('container').style.display = "none";
+           document.getElementById('contain').style.display = "block";
+           document.getElementById('contains').style.display = "none";
+           audio.play();
+      }
 
       const messages = [
          "Ingat Sesuatu?",
@@ -24,14 +32,6 @@
          "Semoga mama sehat selalu "
       ];
       let currentIndex = 0; // Initialize current index
-
-      function start(){
-           const audio = document.getElementById('birthdaySong');
-           document.getElementById('container').style.display = "none";
-           document.getElementById('contain').style.display = "block";
-           document.getElementById('contains').style.display = "none";
-           audio.play();
-      }
 
       // Function to change the message in the message box
       function changeMessage() {
