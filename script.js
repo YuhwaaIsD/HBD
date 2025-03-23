@@ -16,11 +16,13 @@
       }
 
       const messages = [
-         "Ingat Sesuatu?",
+         "Mama ingat sesuatu gaa?",
          "2025-1975 berapa ya?",
-         "Waduh udah 50 tuh",
+         "Yepp benerrr 50",
          "Selamat Ulang Tahun Mama",
-         "Semoga mama sehat selalu "
+         "Semoga mama sehat selalu ",
+         "Selalu bahagia dan sayang Dharma sama wawa yaa 🥰🥰",
+         "Thay Shang Bao You"
       ];
       let currentIndex = 0; // Initialize current index
 
