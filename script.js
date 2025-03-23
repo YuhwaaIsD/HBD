@@ -37,3 +37,16 @@
            document.getElementById('contains').style.display = "block";
          }
       }
+
+     function present(){
+          Swal.fire({
+                title: 'Yeay!',
+                text: 'Mama Cayang Dharma',
+                icon: 'success',
+                confirmButtonText: 'Tell Me!'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    window.location.href = 'https://wa.me/+6285827653860?text=Mama Cayang Dharmaa Muachh 🥰💗';
+                }
+            });
+     }
