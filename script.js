@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function () {
      document.getElementById('changeMessageButton').addEventListener('click', changeMessage); // Add event listener to button
 });
 
-function start(){
+function start(event){
      const audio = document.getElementById('birthdaySong');
      audio.volume = 0.6;
      document.getElementById('container').style.display = "none";
@@ -17,8 +17,8 @@ function start(){
      const container = event.target.parentElement;
      const offsets = [-300, 500]; // Left and right offsets
 
-         offsets.forEach(offsetX => {
-            for (let i = 0; i < 20; i++) {
+      offsets.forEach(offsetX => {
+          for (let i = 0; i < 20; i++) {
                const confetti = document.createElement("div");
                confetti.classList.add("confetti");
                confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
