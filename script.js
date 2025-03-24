@@ -19,7 +19,8 @@ const messages = [
      "Mama ingat sesuatu gaa?",
      "2025-1975 berapa ya?",
      "Yepp benerrr 50",
-     "Selamat Ulang Tahun Mama",
+     "Ciee ulang tahunn",
+     "Selamat Ulang Tahun Ya Mama",
      "Semoga mama sehat selalu ",
      "Selalu bahagia dan sayang Dharma sama wawa yaa 🥰🥰",
      "Thay Shang Bao You"
@@ -43,10 +44,10 @@ function present(){
           title: 'Yeay!',
           text: 'Mama Cayang Dharma',
           icon: 'success',
-          confirmButtonText: 'Tell Me!'
+          confirmButtonText: 'Kasih Tahu Dharma'
           }).then((result) => {
                if (result.isConfirmed) {
-                    window.location.href = 'https://wa.me/+6285827653860?text=Mama Cayang Dharmaa Muachh 🥰💗';
+                    window.location.href = 'https://wa.me/+6285827653860?text=Mama Cayang Bangett Sama Dharmaa Muachh 🥰💗';
                }
           });
 }
