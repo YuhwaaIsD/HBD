@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 function start(){
      const audio = document.getElementById('birthdaySong');
+     audio.volume = 0.6;
      document.getElementById('container').style.display = "none";
      document.getElementById('contain').style.display = "block";
      document.getElementById('contains').style.display = "none";
