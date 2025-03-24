@@ -13,6 +13,22 @@ function start(){
      document.getElementById('container').style.display = "none";
      document.getElementById('contain').style.display = "block";
      document.getElementById('contains').style.display = "none";
+
+     const container = event.target.parentElement;
+     const offsets = [-300, 500]; // Left and right offsets
+
+         offsets.forEach(offsetX => {
+            for (let i = 0; i < 20; i++) {
+               const confetti = document.createElement("div");
+               confetti.classList.add("confetti");
+               confetti.style.background = `hsl(${Math.random() * 360}, 100%, 50%)`;
+               confetti.style.setProperty("--x", `${Math.random() * 300 - 150 + offsetX}px`);
+               confetti.style.setProperty("--y", `${Math.random() * 300 - 150}px`);
+               container.appendChild(confetti);
+               setTimeout(() => confetti.remove(), 1500);
+            }
+         });
+     
      audio.play();
 }
 
